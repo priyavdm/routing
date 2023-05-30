@@ -15,6 +15,9 @@ export class ServiceService {
     return this.http.get(this.url+ '/getcomp')
   }
   getdet(id:string|null){
-    return this.http.get(this.url+ '/getempdet' +id)
+    return this.http.get(this.url+ '/getempdet/' +id)
+  }
+  getcompdet(id:string|null){
+     return this.http.get(this.url+ '/getcompdet/' +id)
   }
 }

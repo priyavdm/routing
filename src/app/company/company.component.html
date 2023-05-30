@@ -1,1 +1,18 @@
 <p>company works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>roles</th>
+            <th>place</th>
+            
+        </tr>
+    </thead>
+    <tbody >
+        <tr (click)="list(r.id)" *ngFor="let r of getalldata">
+            <td>{{r.compname}}</td>
+            <td>{{r.roles}}</td>
+            <td>{{r.place}}</td>
+        </tr>
+    </tbody>
+</table>

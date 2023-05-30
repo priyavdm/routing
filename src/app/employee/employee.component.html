@@ -8,8 +8,8 @@
             <th>empage</th>
         </tr>
     </thead>
-    <tbody *ngFor="let e of getalldata">
-        <tr (click)='list(e.id)'>
+    <tbody >
+        <tr (click)='list(e.id)' *ngFor="let e of getalldata">
             <td>{{e.empname}}</td>
             <td>{{e.emprole}}</td>
             <td>{{e.empsal}}</td>

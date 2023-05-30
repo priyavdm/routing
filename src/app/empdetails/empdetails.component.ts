@@ -13,8 +13,14 @@ export class EmpdetailsComponent implements OnInit{
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
     let id=this.Actroute.snapshot.paramMap.get('id');
-    this.service.getdet(id).subscribe((data)=>{
-      this.empdet=data;
+    this.service.getdet(id).subscribe((data:any)=>{
+      console.log(data);
+      
+      // console.log(data);
+      
+      this.empdet=data[0];
+      // console.log(this.empdet);
+      
     })
   }
 
